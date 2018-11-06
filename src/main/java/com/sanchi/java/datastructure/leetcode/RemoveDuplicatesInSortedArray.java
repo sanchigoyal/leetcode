@@ -46,7 +46,6 @@ public class RemoveDuplicatesInSortedArray {
         "After removing duplicates[length=" + removeDuplicates(dataSet2)
             + ", value=" + Arrays
             .toString(dataSet2) + "]");
-
   }
 
   public static int removeDuplicates(int[] data) {

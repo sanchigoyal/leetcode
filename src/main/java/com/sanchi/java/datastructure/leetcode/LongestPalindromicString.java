@@ -35,12 +35,14 @@ public class LongestPalindromicString {
       MatchResult evenResult = getMaxMatch(value,length, i-1, i);
       if(evenResult.length > maxLength){
         longestPalindrome = evenResult.value;
+        maxLength = evenResult.length;
       }
 
       // odd check
       MatchResult oddResult = getMaxMatch(value,length, i-1, i+1);
       if(oddResult.length > maxLength){
         longestPalindrome = oddResult.value;
+        maxLength = oddResult.length;
       }
     }
 
